@@ -17,6 +17,7 @@ class CreateModelsTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('brand_id');
+            $table->integer('user_id')->default(0);
             $table->timestamps();
         });
     }

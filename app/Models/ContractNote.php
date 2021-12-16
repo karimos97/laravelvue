@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class ContractNote extends Model
 {
     use HasFactory;
+    protected $fillable=['note','contract_id','user_id'];
 }

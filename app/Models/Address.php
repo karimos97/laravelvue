@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CarOption extends Model
+class Address extends Model
 {
     use HasFactory;
-    protected $fillable=['name'];
+    protected $fillable=['address','city','country_id','client_id','user_id'];
 }

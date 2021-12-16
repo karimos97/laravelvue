@@ -15,6 +15,12 @@ class CreateContractsTable extends Migration
     {
         Schema::create('contracts', function (Blueprint $table) {
             $table->id();
+            $table->integer('client_id');
+            $table->integer('car_id');
+            $table->dateTime('date_exit');
+            $table->dateTime('date_return')->nullable();
+            $table->decimal('cost_day');
+            $table->intger('user_id');
             $table->timestamps();
         });
     }

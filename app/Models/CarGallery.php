@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class CarGallery extends Model
 {
     use HasFactory;
+    protected $fillable=['path','model_id','user_id'];
 }
