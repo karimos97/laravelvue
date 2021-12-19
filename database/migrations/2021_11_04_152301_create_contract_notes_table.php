@@ -15,6 +15,8 @@ class CreateContractNotesTable extends Migration
     {
         Schema::create('contract_notes', function (Blueprint $table) {
             $table->id();
+            $table->integer('contact_id');
+            $table->string('note');
             $table->timestamps();
         });
     }

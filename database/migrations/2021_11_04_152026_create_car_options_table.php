@@ -16,6 +16,7 @@ class CreateCarOptionsTable extends Migration
         Schema::create('car_options', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('icon');
             $table->timestamps();
         });
     }

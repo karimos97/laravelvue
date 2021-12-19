@@ -20,7 +20,8 @@ class CreateContractsTable extends Migration
             $table->dateTime('date_exit');
             $table->dateTime('date_return')->nullable();
             $table->decimal('cost_day');
-            $table->intger('user_id');
+            $table->integer('user_id');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

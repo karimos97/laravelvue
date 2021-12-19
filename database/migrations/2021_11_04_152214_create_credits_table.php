@@ -15,6 +15,10 @@ class CreateCreditsTable extends Migration
     {
         Schema::create('credits', function (Blueprint $table) {
             $table->id();
+            $table->float('amount');
+            $table->integer('car_id');
+            $table->integer('total_month');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

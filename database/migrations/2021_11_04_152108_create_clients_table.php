@@ -17,9 +17,14 @@ class CreateClientsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('phone1')->nullable();
+            $table->integer('sex')->nullable();
             $table->string('phone2')->nullable();
             $table->string('email')->nullable();
             $table->date('birth_date');
+            $table->string('passport')->nullable();
+            $table->string('cin')->nullable();
+            $table->string('permis')->nullable();
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

@@ -17,12 +17,13 @@ class CreateCarsTable extends Migration
             $table->id();
             $table->string('matricule');
             $table->string('vin');
-            $table->date('anne_fabrication');
+            $table->date('annee_fabrication');
             $table->string('color');
             $table->integer('category');
             $table->integer('carrburant');
             $table->integer('status');
             $table->integer('transmission');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
